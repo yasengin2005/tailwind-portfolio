@@ -1,8 +1,8 @@
 const SectionTitle = ({ text }) => {
   return (
-    <div className="border-b border-gray-200 pb-5">
-      <h2 className="text-3xl font-bold capitalize tracking-wider">{text}</h2>
-    </div>
+    <section className="mt-10 border-b border-gray-300 pb-4">
+      <h2 className="text-3xl font-bold capitalize">{text}</h2>
+    </section>
   );
 };
 

@@ -4,9 +4,9 @@ import SectionTitle from "./SectionTitle";
 
 const Projects = () => {
   return (
-    <section className="py-20 align-element" id="projects">
-      <SectionTitle text="web creations" />
-      <div className="py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+    <section id="projects" className="align-element pt-20">
+      <SectionTitle text="my projects" />
+      <div className="mb-10 grid lg:grid-cols-2 xl:grid-cols-3 gap-x-6">
         {projects.map((project) => {
           return <ProjectsCard key={project.id} {...project} />;
         })}

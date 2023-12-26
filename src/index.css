@@ -6,4 +6,7 @@
   .align-element {
     @apply mx-auto max-w-7xl px-8;
   }
+  .hovery-emerald {
+    @apply hover:text-emerald-600 duration-300 hover:font-bold;
+  }
 }

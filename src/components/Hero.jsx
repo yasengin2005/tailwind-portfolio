@@ -3,32 +3,46 @@ import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="bg-emerald-100 py-24">
-      <div className="align-element grid md:grid-cols-2 items-center gap-8">
-        <article>
-          <h1 className="text-7xl font-bold tracking-wider">I`m Engin</h1>
-          <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide">
-            Front-end developer
-          </p>
-          <p className="mt-2 tracking-wide text-slate-700 capitalize">
+    <section className="align-element py-20 bg-white grid md:grid-cols-2 items-center">
+      <article className=" ">
+        <h1 className="text-7xl font-bold tracking-wider">I`m Engin</h1>
+        <div className="text-slate-700 capitalize tracking-wide mt-4">
+          <h4 className="text-3xl">front-end developer</h4>
+          <p className="mt-2 text-xl italic">
             turning ideas into interactive reality
           </p>
-          <div className="flex gap-x-4 mt-4">
-            <a href="#">
-              <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+          <div className="flex gap-3">
+            <a
+              href="https://github.com/yasengin2005?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithubSquare className="h-8 w-8 mt-3 text-slate-500 hover:text-black hover:scale-110 duration-300" />
             </a>
-            <a href="#">
-              <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            <a
+              href="https://www.linkedin.com/in/engin-b%C3%BCk%C3%BCm-534136240"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="h-8 w-8 mt-3 text-slate-500 hover:text-black hover:scale-110" />
             </a>
-            <a href="#">
-              <FaTwitterSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            <a
+              href="https://twitter.com/enginbukum"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaTwitterSquare className="h-8 w-8 mt-3 text-slate-500 hover:text-black hover:scale-110" />
             </a>
           </div>
-        </article>
-        <article className="hidden md:block">
-          <img src={heroImg} alt="hero img" className="py-20 lg:py-66" />
-        </article>
-      </div>
+        </div>
+      </article>
+      <article className="hidden md:block">
+        <img
+          src={heroImg}
+          alt="hero img"
+          className="w-full object-fit max-w-64"
+        />
+      </article>
     </section>
   );
 };

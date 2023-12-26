@@ -1,10 +1,10 @@
-const SkillsCard = ({ icon, title, text }) => {
+const SkillsCard = ({ title, icon, text }) => {
   return (
-    <article>
+    <section>
       <span>{icon}</span>
-      <h4 className="mt-6 font-bold">{title}</h4>
-      <p className="mt-2 text-slate-500">{text}</p>
-    </article>
+      <h4 className="mt-4 text-xl font-bold tracking-wide">{title}</h4>
+      <p className="mt-2 text-slate-700 text-justify">{text}</p>
+    </section>
   );
 };
 

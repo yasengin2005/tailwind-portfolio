@@ -1,22 +1,23 @@
-import aboutSvg from "../assets/about.svg";
 import SectionTitle from "./SectionTitle";
+import aboutImg from "../assets/about.svg";
 
 const About = () => {
   return (
-    <section className="bg-white py-20" id="about">
-      <div className="align-element grid md:grid-cols-2 items-center gap-16">
-        <img src={aboutSvg} alt="about svg" className="w-full h-64" />
-        <article>
-          <SectionTitle text="code and coffee" />
-          <p className="text-slate-600 mt-8 leading-loose">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-            ratione aperiam, adipisci, nam ipsa minus repellendus sed iusto
-            voluptate magni fugit ab? Eos laudantium blanditiis incidunt
-            veritatis. Laboriosam temporibus eius sint nam nobis reprehenderit
-            ut totam officia consectetur architecto, assumenda magni quidem
-            reiciendis? Illo culpa ea esse porro, explicabo eius.
-          </p>
-        </article>
+    <section
+      id="about"
+      className="align-element grid grid-cols-2 mt-20 items-center gap-8"
+    >
+      <img src={aboutImg} alt="" />
+      <div>
+        <SectionTitle text="code and coffee" />
+        <p className="py-6 text-slate-600 text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus illum
+          accusamus, praesentium deleniti aliquam dolorum totam molestiae
+          facilis nam, voluptatum eius exercitationem cumque quos fugit unde
+          placeat nihil laborum cum ut eum distinctio corrupti. Libero, veniam
+          eveniet qui labore officia quibusdam error mollitia culpa quam at
+          nesciunt harum optio quia!
+        </p>
       </div>
     </section>
   );
